@@ -9,13 +9,20 @@ import "firebase/compat/storage";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCwXljEuBwl0H-bZLEgEa6wyNEh_RVEBAw",
-    authDomain: "ecommerce-87fae.firebaseapp.com",
-    projectId: "ecommerce-87fae",
-    storageBucket: "ecommerce-87fae.appspot.com",
-    messagingSenderId: "464053325413",
-    appId: "1:464053325413:web:d754a5f63439868de2008c"
+    apiKey: "AIzaSyBdvobH83tZ2I3GsHr4a8Uls3yB0U3xcYg",
+
+  authDomain: "next-crud-8154b.firebaseapp.com",
+
+  projectId: "next-crud-8154b",
+
+  storageBucket: "next-crud-8154b.appspot.com",
+
+  messagingSenderId: "392326268167",
+
+  appId: "1:392326268167:web:283ac8ce74e3e3b150b1a2"
+
 };
+
 
 firebase.initializeApp(firebaseConfig);
 export const Storage = firebase.storage();
