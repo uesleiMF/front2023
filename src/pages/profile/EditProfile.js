@@ -54,12 +54,12 @@ const EditProfile = () => {
       ) {
         const image = new FormData();
         image.append("file", profileImage);
-        image.append("cloud_name", "zinotrust");
-        image.append("upload_preset", "wk66xdkq");
+        image.append("cloud_name", "dh7vjw6lu");
+        image.append("upload_preset", "YBNNx6_UYZk1s09gIgJu8bMRzdU");
 
         // First save image to cloudinary
         const response = await fetch(
-          "https://api.cloudinary.com/v1_1/zinotrust/image/upload",
+          "https://res.cloudinary.com/dh7vjw6lu/image/upload",
           { method: "post", body: image }
         );
         const imgData = await response.json();
