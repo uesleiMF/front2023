@@ -35,7 +35,7 @@ const Profile = () => {
       {isLoading && <SpinnerImg />}
       <>
         {!isLoading && profile === null ? (
-          <p>Something went wrong, please reload the page...</p>
+          <p>Something went wrong, please reload the paginas...</p>
         ) : (
           <Card cardClass={"card --flex-dir-column"}>
             <span className="profile-photo">
