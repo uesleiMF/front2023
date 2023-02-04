@@ -2,7 +2,7 @@ import React from "react";
 import { Social } from "./styles";
 import { FaWhatsapp } from "react-icons/fa";
 import c1 from "../../components/Img/uj.png";
-import c2 from "../../components/Img/c2.jpg";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Sobrenos.css";
 
