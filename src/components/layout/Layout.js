@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../footer/Footer";
+//import Footer from "../Footer/Footer";
 import Header from "../header/Header";
 
 const Layout = ({ children }) => {
@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <div style={{ minHeight: "80vh" }} className="--pad">
         {children}
       </div>
-      <Footer />
+      
     </>
   );
 };

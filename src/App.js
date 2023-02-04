@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Pag from "./pages/Pag/Pag";
+import Sobrenos from "./pages/Sobrenos/Sobrenos";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Forgot from "./pages/auth/Forgot";
@@ -20,6 +22,10 @@ import EditProduct from "./pages/editProduct/EditProduct";
 import Profile from "./pages/profile/Profile";
 import EditProfile from "./pages/profile/EditProfile";
 import Contact from "./pages/contact/Contact";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Player from "./pages/Player/App";
+
 
 axios.defaults.withCredentials = true;
 
@@ -36,10 +42,14 @@ function App() {
 
   return (
     <BrowserRouter>
+     <Navbar/>
       <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/pag" element={<Pag />} />
+        <Route path="/sobrenos" element={<Sobrenos />} />
+        <Route path="/app" element={<Player />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot" element={<Forgot />} />
         <Route path="/resetpassword/:resetToken" element={<Reset />} />
@@ -115,6 +125,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
