@@ -8,6 +8,7 @@ export const Container = styled.div`
   background-color: #414040;
   padding: 1rem;
   color: #fff;
+ 
 `;
 
 export const Social = styled.div`

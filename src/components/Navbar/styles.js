@@ -8,8 +8,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: start; 
   background-color:#aa67d7;
-  padding: 0.6rem 2rem;
- 
+  padding: 1.6rem 4rem;
+  width: 100rem;
   
 `;
 
@@ -17,14 +17,14 @@ export const Logo = styled.a`
 padding: 0 0.1rem;
 display: flex;
 list-style: none;
-margin-bottom: 0px;
+margin-bottom: 10px;
 background:transparent;
 
 
 
 
 img {
-    width: 4rem;
+    width: 7rem;
     margin: 0 0.9rem;
     border-radius: 25%;
     margin-top: auto;
@@ -37,17 +37,18 @@ img {
 export const List = styled.ul`
   display: flex;
   list-style: none;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   background:transparent;
-  margin-left:-40px;
+  margin-left:-30px;
+  
   li {
     
     a {
       text-decoration: none;
       color:  #000;
-      font-weight: 700;
-      padding: 0 0.5rem;
-      font-size: 0.9rem;
+      font-weight: 900;
+      padding: 0 1.1rem;
+      font-size: 1.1rem;
       display: flex;
       align-items: center;
 
