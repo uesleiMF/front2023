@@ -1,20 +1,20 @@
 .profile {
   .card {
-    max-width: 600px;
+    max-width: 400px;
     display: flex;
-    justify-content: flex;
-
-    padding: 1rem 1;
+    justify-content: flex-start;
+    padding-right: 2rem;
+    padding-left: 2rem;
 
     span.profile-photo {
       text-align: center;
     }
 
     img {
-      width: 100%;
-      max-width: 400px;
-      padding-right: 1rem;
-      padding-left: 1rem;
+      width: 60%;
+      max-width: 350px;
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
     span.profile-data {
       margin: 0 1rem;
