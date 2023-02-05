@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: start; 
   background-color:#aa67d7;
   padding: 1.6rem 4rem;
-  width: 100rem;
+
   
 `;
 

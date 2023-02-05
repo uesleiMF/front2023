@@ -6,8 +6,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10rem;
-  min-width: 768px;
+  padding: 8rem;
+  min-width: 250px;
   max-width: 1024px;
 
   h2 {
