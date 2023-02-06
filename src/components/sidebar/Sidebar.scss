@@ -7,16 +7,17 @@ main {
   color: #ccc;
 }
 .sidebar {
-  position: flex;
+  position: fluid;
   top: 0;
   left: 0;
   width: 230px;
-  height: 100vh;
+  height: 200vh;
   flex-shrink: 0;
-  background-color: var(--color-white);
+  background-color:#aa67d7;
   overflow: auto;
   color: var(-color-dark);
   transition: all 0.5s;
+  
 }
 
 .top_section {
