@@ -3,8 +3,8 @@
   width: 100%;
   max-width: 500px;
   .card {
-    width: 100%;
-    max-width: 500px;
+    width: 80%;
+    max-width: 300px;
     padding: 1rem;
   }
   .detail {
@@ -14,8 +14,8 @@
     .badge {
       background-color: var(--color-danger);
       color: #fff;
-      padding-left: 2px;
-      padding-right: 2px;
+      padding-left: 1px;
+      padding-right: 1px;
       border-radius: 3px;
     }
     p b {
