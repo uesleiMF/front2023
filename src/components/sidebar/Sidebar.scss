@@ -1,23 +1,22 @@
 .layout {
-  display: flex;
+  display: block;
 }
 main {
   width: 100%;
-  // padding: 20px;
-  color: #ccc;
+  // padding: 2px;
+  color: #bbecbb;
 }
 .sidebar {
   position: fluid;
   top: 0;
   left: 0;
-  width: 230px;
-  height: 200vh;
+  width: 400px;
+  height: 40vh;
   flex-shrink: 0;
-  background-color:#aa67d7;
+  background-color: var(--color-white);
   overflow: auto;
   color: var(-color-dark);
   transition: all 0.5s;
-  
 }
 
 .top_section {
@@ -57,11 +56,11 @@ main {
 }
 
 .s-parent {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #f3c3c3;
 }
 
 .sidebar-item:hover {
-  background-color: #eee;
+  background-color: #dd9dcf;
 }
 
 .sidebar-title {
@@ -107,7 +106,7 @@ main {
 }
 
 .s-child {
-  border: 1px solid #ccc;
+  border: 1px solid #80e5e9;
   border-radius: 3px;
   margin-top: 5px;
 }
