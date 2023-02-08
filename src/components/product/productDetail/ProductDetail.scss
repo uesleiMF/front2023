@@ -1,11 +1,15 @@
 .product-detail {
-  margin-bottom: 5rem;
-  width: 100%;
-  max-width: 500px;
+  margin-bottom: 2rem;
+  width: 180%;
+  max-width: 300px;
+  
   .card {
-    width: 80%;
-    max-width: 300px;
-    padding: 1rem;
+    width: 100%;
+    max-width: 1000px;
+    padding: 2rem;
+    height: 100%;
+  
+   
   }
   .detail {
     & > * {
@@ -13,7 +17,7 @@
     }
     .badge {
       background-color: var(--color-danger);
-      color: #fff;
+      color: #b9dfe4;
       padding-left: 1px;
       padding-right: 1px;
       border-radius: 3px;
