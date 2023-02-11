@@ -4,18 +4,19 @@
 main {
   width: 100%;
   // padding: 20px;
-  color: #ccc;
+  color: #daa8a8;
 }
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 300px;
-  background-color: #f1f1f1;
+
+  background-color: #dbb4d3;
   position: absolute;
-  height: 100%;
+
   overflow: auto;
 
-
+  width: auto;
+  height: auto;
 
 
   
@@ -108,7 +109,7 @@ main {
 }
 
 .s-child {
-  border: 1px solid #ccc;
+  border: 1px solid #add3cd;
   border-radius: 3px;
   margin-top: 5px;
 }
@@ -129,7 +130,7 @@ a {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #eee;
+  background-color: #98c2cf;
 }
 
 .active::after {
