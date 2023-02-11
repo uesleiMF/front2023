@@ -39,7 +39,7 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail">
-      <h3 className="--mt">Product Detail</h3>
+      <h3 className="--mt">Sobre o Casal</h3>
       <Card cardClass="card">
         {isLoading && <SpinnerImg />}
         {product && (
@@ -51,16 +51,16 @@ const ProductDetail = () => {
                   alt={product.image.fileName}
                 />
               ) : (
-                <p>No image set for this product</p>
+                <p>Nenhuma imagem definida para este Casal</p>
               )}
             </Card>
             <h4>Product Availability: {stockStatus(product.quantity)}</h4>
             <hr />
             <h4>
-              <span className="badge">Name: </span> &nbsp; {product.name}
+              <span className="badge">Casal: </span> &nbsp; {product.name}
             </h4>
             <p>
-              <b>&rarr; SKU : </b> {product.sku}
+              <b>&rarr; Cod. : </b> {product.sku}
             </p>
             <p>
               <b>&rarr; Category : </b> {product.category}

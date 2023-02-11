@@ -3,7 +3,7 @@ import { BiImageAdd } from "react-icons/bi";
 
 const menu = [
   {
-    title: "Dashboard",
+    title: "Painel",
     icon: <FaTh />,
     path: "/dashboard",
   },
@@ -13,21 +13,21 @@ const menu = [
     path: "/add-product",
   },
   {
-    title: "Account",
+    title: "Conta",
     icon: <FaRegChartBar />,
     childrens: [
       {
-        title: "Profile",
+        title: "Perfil",
         path: "/profile",
       },
       {
-        title: "Edit Profile",
+        title: "Editar Perfil",
         path: "/edit-profile",
       },
     ],
   },
   {
-    title: "Report Bug",
+    title: "Relatar Bug",
     icon: <FaCommentAlt />,
     path: "/contact-us",
   },

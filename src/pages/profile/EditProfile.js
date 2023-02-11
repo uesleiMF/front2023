@@ -90,14 +90,14 @@ const EditProfile = () => {
     <div className="profile --my2">
       {isLoading && <Loader />}
 
-      <Card cardClass={"card --flex-direction: row;"}>
+      <Card cardClass={"card --flex-dir-column"}>
         <span className="profile-photo">
           <img src={user?.photo} alt="profilepic" />
         </span>
         <form className="--form-control --m" onSubmit={saveProfile}>
           <span className="profile-data">
             <p>
-              <label>Name:</label>
+              <label>Nome:</label>
               <input
                 type="text"
                 name="name"
@@ -109,10 +109,10 @@ const EditProfile = () => {
               <label>Email:</label>
               <input type="text" name="email" value={profile?.email} disabled />
               <br />
-              <code>Email cannot be changed.</code>
+              <code>O e-mail não pode ser alterado.</code>
             </p>
             <p>
-              <label>Phone:</label>
+              <label>Telefone:</label>
               <input
                 type="text"
                 name="phone"
@@ -121,21 +121,21 @@ const EditProfile = () => {
               />
             </p>
             <p>
-              <label>Bio:</label>
+              <label>Biografia:</label>
               <textarea
                 name="bio"
                 value={profile?.bio}
                 onChange={handleInputChange}
-                cols="20"
+                cols="30"
                 rows="10"
               ></textarea>
             </p>
             <p>
-              <label>Photo:</label>
+              <label>Foto:</label>
               <input type="file" name="image" onChange={handleImageChange} />
             </p>
             <div>
-              <button className="--btn --btn-primary">Edit Profile</button>
+              <button className="--btn --btn-primary">Editar Perfil</button>
             </div>
           </span>
         </form>

@@ -23,7 +23,7 @@ const Header = () => {
           <span className="--color-danger">{name}</span>
         </h3>
         <button onClick={logout} className="--btn --btn-danger">
-          Logout
+          Sair
         </button>
       </div>
       <hr />

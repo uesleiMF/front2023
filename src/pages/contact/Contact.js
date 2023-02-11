@@ -33,11 +33,11 @@ const Contact = () => {
       <div className="section">
         <form onSubmit={sendEmail}>
           <Card cardClass="card">
-            <label>Subject</label>
+            <label>Assunto</label>
             <input
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder="Assunto"
               required
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
