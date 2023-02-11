@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h3 className="--mt">Contact Us</h3>
+      <h3 className="--mt">Contato</h3>
       <div className="section">
         <form onSubmit={sendEmail}>
           <Card cardClass="card">
@@ -42,7 +42,7 @@ const Contact = () => {
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
             />
-            <label>Message</label>
+            <label>Messagem</label>
             <textarea
               cols="30"
               rows="10"
@@ -51,14 +51,14 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            <button className="--btn --btn-primary">Send Message</button>
+            <button className="--btn --btn-primary">Enviar Messagem</button>
           </Card>
         </form>
 
         <div className="details">
           <Card cardClass={"card2"}>
-            <h3>Our Contact Information</h3>
-            <p>Fill the form or contact us via other channels listed below</p>
+            <h3>Informações Aqui</h3>
+            <p>Duvidas ou sugestoes preencha os campos</p>
 
             <div className="icons">
               <span>
