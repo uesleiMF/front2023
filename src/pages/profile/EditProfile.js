@@ -90,7 +90,7 @@ const EditProfile = () => {
     <div className="profile --my2">
       {isLoading && <Loader />}
 
-      <Card cardClass={"card --flex-dir-column"}>
+      <Card cardClass={"card --flex-direction: row;"}>
         <span className="profile-photo">
           <img src={user?.photo} alt="profilepic" />
         </span>
@@ -126,7 +126,7 @@ const EditProfile = () => {
                 name="bio"
                 value={profile?.bio}
                 onChange={handleInputChange}
-                cols="30"
+                cols="20"
                 rows="10"
               ></textarea>
             </p>
