@@ -3,8 +3,8 @@
     max-width: 400px;
     display: flex;
     justify-content: flex-start;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     align-items: stretch;
 
     span.profile-photo {
@@ -22,12 +22,12 @@
     }
     span.profile-data > * {
       border-top: 1px solid #ccc;
-      padding: 5px 0;
+      padding: 4px 0;
     }
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   span.profile-photo {
     margin: auto;
   }
