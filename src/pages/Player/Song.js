@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Song = ({ currentSong }) => {
 	return (
 		<div className="container">
-		<div className="card mt-2 bg-warning bg-opacity-50">
+		<div className="card bg-warning bg-opacity-50">
 		<SongContainer>
 			<Img src={currentSong.cover} alt={currentSong.name}></Img>
 			<H1>{currentSong.name}</H1>
@@ -26,9 +26,9 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 13%;
-	border-radius: 30%;
-	@media screen and (max-width: 300px) {
+	width: 28%;
+	border-radius: 25%;
+	@media screen and (max-width: 250px) {
 		width: 50%;
 	}
 `;
