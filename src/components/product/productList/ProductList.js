@@ -40,8 +40,8 @@ const ProductList = ({ products, isLoading }) => {
 
   const confirmDelete = (id) => {
     confirmAlert({
-      title: "Delete Product",
-      message: "Are you sure you want to delete this product.",
+      title: "Deletar Casal",
+      message: "Tem certeza que deseja excluir este Casal.",
       buttons: [
         {
           label: "Delete",
@@ -82,7 +82,7 @@ const ProductList = ({ products, isLoading }) => {
     <div className="product-list">
       <hr />
       <div className="table">
-        <div className="--flex-between --flex-dir-column">
+        <div className="--flex-between --flex-direction: row;">
           <span>
             <h3>Lista de Casais</h3>
           </span>
@@ -103,13 +103,13 @@ const ProductList = ({ products, isLoading }) => {
             <table>
               <thead>
                 <tr>
-                  <th>s/n</th>
+                  <th>nº</th>
                   <th>Nome-Casal</th>
                   <th>Category</th>
-                  <th>Price</th>
+                  <th>Ofertas</th>
                   <th>Quantity</th>
                   <th>Value</th>
-                  <th>Action</th>
+                  <th>Ação</th>
                 </tr>
               </thead>
 

@@ -8,7 +8,7 @@ const menu = [
     path: "/dashboard",
   },
   {
-    title: "Add Product",
+    title: "Adicionar Casais",
     icon: <BiImageAdd />,
     path: "/add-product",
   },

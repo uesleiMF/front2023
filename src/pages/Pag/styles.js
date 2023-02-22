@@ -6,8 +6,8 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 8rem;
-  min-width: 250px;
+  padding: 10rem;
+  min-width: 768px;
   max-width: 1024px;
 
   h2 {
@@ -44,7 +44,7 @@ img {
     border-radius: 25%;
     margin-top: auto;
     align-items: center;
-    
+    justify-content: center;
 
   }
 `;

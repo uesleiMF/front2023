@@ -56,10 +56,10 @@ const ProductForm = ({
             onChange={handleInputChange}
           />
 
-          <label>Product Price:</label>
+          <label>Ofertas:</label>
           <input
             type="text"
-            placeholder="Product Price"
+            placeholder="Ofertas"
             name="price"
             value={product?.price}
             onChange={handleInputChange}
