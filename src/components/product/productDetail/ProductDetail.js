@@ -63,17 +63,20 @@ const ProductDetail = () => {
               <b>&rarr; Cod. : </b> {product.sku}
             </p>
             <p>
-              <b>&rarr; Category : </b> {product.category}
+              <b>&rarr; Cargo : </b> {product.category}
             </p>
             <p>
-              <b>&rarr; Ofertas : </b> {"$"}
+              <b>&rarr; Ofertas : </b> {"R$"}
               {product.price}
             </p>
             <p>
-              <b>&rarr; Quantity in stock : </b> {product.quantity}
+              <b>&rarr; Qtd : </b> {product.quantity}
             </p>
             <p>
-              <b>&rarr; Total Value in stock : </b> {"$"}
+              <b>&rarr; Aniversario : </b> {product.date}
+            </p>
+            <p>
+              <b>&rarr; Total de Ofertas : </b> {"R$"}
               {product.price * product.quantity}
             </p>
             <hr />

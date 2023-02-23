@@ -12,6 +12,7 @@ const initialState = {
   name: "",
   category: "",
   quantity: "",
+  date:"",
   price: "",
 };
 
@@ -25,7 +26,7 @@ const AddProduct = () => {
 
   const isLoading = useSelector(selectIsLoading);
 
-  const { name, category, price, quantity } = product;
+  const { name, category, price, date, quantity, } = product;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -38,9 +39,9 @@ const AddProduct = () => {
   };
 
   const generateKSKU = (category) => {
-    const letter = category.slice(0, 3).toUpperCase();
+    const letter = category.slice(0, 2).toUpperCase();
     const number = Date.now();
-    const sku = letter + "-" + number;
+    const sku = letter + number;
     return sku;
   };
 
@@ -52,6 +53,7 @@ const AddProduct = () => {
     formData.append("category", category);
     formData.append("quantity", Number(quantity));
     formData.append("price", price);
+    formData.append("date", date);
     formData.append("description", description);
     formData.append("image", productImage);
 

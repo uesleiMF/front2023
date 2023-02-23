@@ -46,11 +46,18 @@ const ProductForm = ({
             value={product?.name}
             onChange={handleInputChange}
           />
-
-          <label>Product Category:</label>
+          <label>Aniversario:</label>
           <input
             type="text"
-            placeholder="Product Category"
+            placeholder="Aniversario"
+            name="date"
+            value={product?.date}
+            onChange={handleInputChange}
+          />
+          <label>Cargo:</label>
+          <input
+            type="text"
+            placeholder="Cargo"
             name="category"
             value={product?.category}
             onChange={handleInputChange}
@@ -65,14 +72,15 @@ const ProductForm = ({
             onChange={handleInputChange}
           />
 
-          <label>Product Quantity:</label>
+          <label>Qtd:</label>
           <input
             type="text"
-            placeholder="Product Quantity"
+            placeholder="Qtd"
             name="quantity"
             value={product?.quantity}
             onChange={handleInputChange}
           />
+          
 
           <label>Descrição do Casal:</label>
           <ReactQuill

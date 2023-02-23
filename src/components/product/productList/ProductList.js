@@ -105,31 +105,36 @@ const ProductList = ({ products, isLoading }) => {
                 <tr>
                   <th>nº</th>
                   <th>Nome-Casal</th>
-                  <th>Category</th>
+                  <th>Cargo</th>
                   <th>Ofertas</th>
                   <th>Quantity</th>
-                  <th>Value</th>
+                  <th>Aniversario</th>
+                  <th>Total</th>
                   <th>Ação</th>
                 </tr>
               </thead>
 
               <tbody>
                 {currentItems.map((product, index) => {
-                  const { _id, name, category, price, quantity } = product;
+                  const { _id, name, category, price, date, quantity } = product;
                   return (
                     <tr key={_id}>
                       <td>{index + 1}</td>
                       <td>{shortenText(name, 16)}</td>
+                     
                       <td>{category}</td>
                       <td>
-                        {"$"}
+                        {"R$"}
                         {price}
                       </td>
+                     
                       <td>{quantity}</td>
+                      <td>{date}</td>
                       <td>
-                        {"$"}
+                        {"R$"}
                         {price * quantity}
                       </td>
+                     
                       <td className="icons">
                         <span>
                           <Link to={`/product-detail/${_id}`}>
