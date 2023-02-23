@@ -22,7 +22,7 @@ export const Container = styled.div`
  
     x {
     width: 55%;
-    border-radius: 20%;
+    border-radius: 50%;
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -39,7 +39,7 @@ align-items: center;
 }
 
 img {
-    width: 9rem;
+    width: 59rem;
     margin: 0 0.9rem;
     border-radius: 25%;
     margin-top: auto;

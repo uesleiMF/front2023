@@ -18,7 +18,7 @@ const Song = ({ currentSong }) => {
 const SongContainer = styled.div`
 	margin-top: 5vh;
 	min-height: 4vh;
-	max-height: 40vh;
+	max-height: 80vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,7 +26,7 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 28%;
+	width: 42%;
 	border-radius: 25%;
 	@media screen and (max-width: 250px) {
 		width: 50%;

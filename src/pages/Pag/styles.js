@@ -11,10 +11,22 @@ export const Container = styled.div`
   max-width: 1024px;
 
   h2 {
-    text-align: center;
-    padding: 0 0 2rem 0;
-    font-weight: 500;
-    color: white;
+    text-decoration: none;
+      color:  #000;
+      font-weight: 800;
+      padding: 0 1.0rem;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+  }
+  h6 {
+    text-decoration: none;
+      color:  #000;
+      font-weight: 800;
+      padding: 0 1.0rem;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
   }
   
   `
