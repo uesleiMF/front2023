@@ -107,7 +107,7 @@ const ProductList = ({ products, isLoading }) => {
                   <th>Nome-Casal</th>
                   <th>Cargo</th>
                   <th>Ofertas</th>
-                  <th>Quantity</th>
+                  <th>Qtd</th>
                   <th>Aniversario</th>
                   <th>Total</th>
                   <th>Ação</th>

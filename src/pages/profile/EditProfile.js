@@ -126,7 +126,7 @@ const EditProfile = () => {
                 name="bio"
                 value={profile?.bio}
                 onChange={handleInputChange}
-                cols="30"
+                cols="20"
                 rows="10"
               ></textarea>
             </p>
