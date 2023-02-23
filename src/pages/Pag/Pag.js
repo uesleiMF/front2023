@@ -17,7 +17,7 @@ import ieq from "../../components/Img/ieq2.jpg";
 
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
+
 import { Social } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
@@ -126,34 +126,32 @@ export default function Home() {
       </div>
 
       <div className="card mt-4 bg-info">
-        <div className="card-title">
-          <div className="row">
-            <div className="col">
+        <div className="row mb-3">
+         
               <h4 className="mx-3 my-3 text-center ">
-                {" "}
+                
                 Visite-nós em nossa (Igreja)
               </h4>
               <h4 className="mx-3 my-3 text-center "> Ou uma </h4>
               <h4 className="mx-4 my-4 text-center ">
-                {" "}
+             
                 (Celula) mais proxima de sua casa
               </h4>
 
               <h6 className="mx-3 my-3 text-center">
-                {" "}
+              
                 CLIQUE EM UMA DAS IMAGENS ABAIXO:
               </h6>
 
-              <Social>
-                <s>
-                  <BsFillArrowDownCircleFill />
-                </s>
-              </Social>
+            
 
               <Logo>
                 <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
                   <img src={ieq} alt="bo" />
                 </a>
+
+               </Logo>
+
                 <h6 className="mx-3 my-3 text-center ">IEQ</h6>
                 <h6 className="mx-3 my-3 text-center ">
                   Igreja Do Evangélio Quadrangular
@@ -161,11 +159,11 @@ export default function Home() {
                 <h6 className="mx-3 my-3 text-center ">
                   Nova-Marabá ---Marabá-Pá
                 </h6>
-              </Logo>
+             
+
             </div>
           </div>
-        </div>
-      </div>
+
 
       <div className="card mt-4 bg-success">
         <div className="row mb-3">

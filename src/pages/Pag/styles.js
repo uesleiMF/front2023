@@ -30,33 +30,35 @@ export const Container = styled.div`
 export const Logo = styled.a`
 
 h6 {
-  font-size: 18px;
+  font-size: 20px;
   color: black;
- 
-  justify-content: center;
-align-items: center;
+  margin: auto;
+  display: block;
  
 }
 
 img {
-    width: 9rem;
-    margin: 0 0.9rem;
-    border-radius: 25%;
-    margin-top: auto;
-    align-items: center;
-    justify-content: center;
+    width: 10rem;
+    border-radius: 30%;
+    margin: auto;
+    display: block;
+  
 
   }
 `;
 export const Social = styled.div`
   a {
-    font-size: 2.9rem;
+    font-size: 3.5rem;
     color: #A020F0;
     text-decoration: none;
     justify-content: center;
   align-items: center;
-   
+  display: flex;
+  margin:  1.2rem;
+
   }
+
+
   s {
     font-size: 2.5rem;
     color: #00ff00;
