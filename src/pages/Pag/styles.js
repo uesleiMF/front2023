@@ -54,11 +54,11 @@ export const Social = styled.div`
     justify-content: center;
   align-items: center;
   display: flex;
-  margin:  1.2rem;
+  margin:  1.8rem;
 
   }
 
-
+  
   s {
     font-size: 2.5rem;
     color: #00ff00;
