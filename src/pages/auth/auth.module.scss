@@ -1,5 +1,5 @@
 .auth {
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +9,8 @@
   }
 
   .form {
-    width: 35rem;
-    padding: 1.5rem;
+    width: 30rem;
+    padding: 2.5rem;
     animation: slide-up 0.5s ease;
     background-color: #fff;
     h2 {
