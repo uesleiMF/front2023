@@ -47,8 +47,8 @@ export const List = styled.ul`
    
     color:  white;
   
-    padding: 0 0.2rem;
-    font-size: 1.5rem;
+    padding: 0 0.4rem;
+    font-size: 1.8rem;
     display: fixed;
     align-items: center;
 
@@ -59,7 +59,7 @@ export const List = styled.ul`
       color:  #000;
       font-weight: 800;
       padding: 0 1.0rem;
-      font-size: 1.0rem;
+      font-size: 1.2rem;
       display: flex;
       align-items: center;
      
