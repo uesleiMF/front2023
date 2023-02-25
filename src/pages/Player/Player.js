@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 // style
 const pointer = { cursor: "pointer" };
 
@@ -84,6 +84,10 @@ const Player = ({
 	};
 
 	return (
+	
+		<div className="container">
+		<div className="card mt-4 bg-warning bg-opacity-75">
+		
 		<PlayerContainer>
 			<TimeControlContainer>
 				<P>{getTime(songInfo.currentTime || 0)}</P>
@@ -125,6 +129,12 @@ const Player = ({
 				/>
 			</PlayControlContainer>
 		</PlayerContainer>
+		</div>
+		
+		</div>
+	
+		
+		
 	);
 };
 
