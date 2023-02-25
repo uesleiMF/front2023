@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Song = ({ currentSong }) => {
 	return (
 		<div className="container">
-		<div className="card bg-warning bg-opacity-50">
+		<div className="card bg-warning bg-opacity-75">
 		<SongContainer>
 			<Img src={currentSong.cover} alt={currentSong.name}></Img>
 			<H1>{currentSong.name}</H1>
@@ -18,7 +18,7 @@ const Song = ({ currentSong }) => {
 const SongContainer = styled.div`
 	margin-top: 5vh;
 	min-height: 4vh;
-	max-height: 80vh;
+	max-height: 40vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,10 +26,10 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 42%;
-	border-radius: 25%;
+	width: 32%;
+	border-radius: 20%;
 	@media screen and (max-width: 250px) {
-		width: 50%;
+		width: 30%;
 	}
 `;
 

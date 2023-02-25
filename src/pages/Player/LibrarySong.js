@@ -70,7 +70,7 @@ const LibrarySongDescription = styled.div`
 const Img = styled.img`
 	margin: 8px 0;
 	height: 60px;
-	border-radius: 30%;
+	border-radius:20%;
 `;
 
 const H1 = styled.h3`
