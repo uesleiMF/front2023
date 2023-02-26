@@ -137,7 +137,7 @@ const Player = ({
 };
 
 const PlayerContainer = styled.div`
-	min-height: 5vh;
+	min-height: 28vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -145,7 +145,7 @@ const PlayerContainer = styled.div`
 `;
 
 const TimeControlContainer = styled.div`
-	margin-top: 5vh;
+	margin-top: 15vh;
 	width: 50%;
 	display: flex;
 	@media screen and (max-width: 468px) {
