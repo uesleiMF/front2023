@@ -28,13 +28,13 @@ const Library = ({ songs, currentSong, setCurrentSong, audioRef, isPlaying, setS
 	);
 };
 const LibraryContainer = styled.div`
-	position: fixed;
+position: absolute;
 	z-index: 9;
 	top: 83px;
 	left: 1px;
-	border-radius: 35px;
-	width: 15rem;
-	height: 80%;
+	border-radius: 5px;
+	width: 18rem;
+	height: 75%;
 	background-color: white;
 	
 	box-shadow: 0 6px 5px rgb(130, 23, 192);
