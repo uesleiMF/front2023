@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import components
 import Player from "./Player";
@@ -61,7 +62,7 @@ const App = () => {
 		
    
 		<div className="container">
-		<div className="card mt-4 mb-3 bg-warning bg-opacity-75">
+		<div className="card mt-4 mb-4 bg-warning bg-opacity-75">
 	
     <AppContainer libraryStatus={libraryStatus}>
 			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />

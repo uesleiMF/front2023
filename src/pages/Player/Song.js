@@ -23,10 +23,10 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 22%;
+	width: 40%;
 	border-radius: 20%;
-	@media screen and (max-width: 250px) {
-		width: 30%;
+	@media screen and (max-width: 700px) {
+		width: 40%;
 	}
 `;
 
