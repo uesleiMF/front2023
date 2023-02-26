@@ -5,11 +5,16 @@
   }
 
   .card2 {
-    padding: 0.1rem;
+    width: 160px;
+    display: block;
+    padding: 0.2rem;
     background-color: #9ed8ae;
-    color: #fff;
+   
+    text-align: center;
+   
     h3,
     p {
+      font-size: 1.2rem;
       color: #fff;
     }
     .icons {
@@ -21,7 +26,7 @@
         margin-bottom: 1rem;
         a,
         p {
-          margin-left: 5px;
+          margin-left: 3px;
         }
       }
     }
@@ -32,7 +37,7 @@
     align-items: flex-start;
 
     form {
-      width: 500px;
+      width: 200px;
       max-width: 100%;
       margin-right: 1rem;
       margin-bottom: 1rem;

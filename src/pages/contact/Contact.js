@@ -44,8 +44,8 @@ const Contact = () => {
             />
             <label>Messagem</label>
             <textarea
-              cols="30"
-              rows="10"
+              cols="10"
+              rows="5"
               name="message"
               required
               value={message}
