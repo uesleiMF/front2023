@@ -30,7 +30,7 @@ export default function Home() {
         <div className="card-title">
           <div className="row">
             <div className="col">
-              <h3 className="mx-3 my-3 text-center "> REDE DE CASAIS</h3>
+              <h3 className="mx-3 my-3 mb-0 text-center "> REDE DE CASAIS</h3>
               <h4 className="mx-3 my-3 text-center"> AMAI SEMPRE</h4>
             </div>
           </div>
@@ -128,20 +128,20 @@ export default function Home() {
       <div className="card mt-4 bg-info">
         <div className="row mb-3">
          
-              <h4 className="mx-3 my-3 text-center ">
+              <h3 className="mx-3 my-3 text-center ">
                 
                 Visite-nós em nossa (Igreja)
-              </h4>
+              </h3>
               <h4 className="mx-3 my-3 text-center "> Ou uma </h4>
               <h4 className="mx-4 my-4 text-center ">
              
                 (Celula) mais proxima de sua casa
               </h4>
 
-              <h6 className="mx-3 my-3 text-center">
+              <h4 className="mx-3 my-3 text-center">
               
                 CLIQUE EM UMA DAS IMAGENS ABAIXO:
-              </h6>
+              </h4>
 
             
 
@@ -152,13 +152,13 @@ export default function Home() {
 
                </Logo>
 
-                <h6 className="mx-3 my-3 text-center ">IEQ</h6>
-                <h6 className="mx-3 my-3 text-center ">
+                <h4 className="mx-3 my-3 text-center ">IEQ</h4>
+                <h5 className="mx-3 my-3 text-center ">
                   Igreja Do Evangélio Quadrangular
-                </h6>
-                <h6 className="mx-3 my-3 text-center ">
+                </h5>
+                <h5 className="mx-3 my-3 text-center ">
                   Nova-Marabá ---Marabá-Pá
-                </h6>
+                </h5>
              
 
             </div>
