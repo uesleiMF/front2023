@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Song = ({ currentSong }) => {
 	return (
 		<div className="container ">
-		<div className="card bg-warning bg-opacity-75">
+			<div className="card mt-4 bg-warning bg-opacity-75">
 		<SongContainer>
 			<Img src={currentSong.cover} alt={currentSong.name}></Img>
 			<H1>{currentSong.name}</H1>

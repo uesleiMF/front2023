@@ -2,11 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Nav = ({ libraryStatus, setLibraryStatus }) => {
 	return (
 		
 		
+		<div className="container">
+		<div className="card mt-4 bg-warning bg-opacity-75">
 		
 		<NavContainer>
 			
@@ -19,7 +22,8 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 				
 			</Button1>
 		</NavContainer>
-	
+	</div>
+	</div>
 	);
 };
 
