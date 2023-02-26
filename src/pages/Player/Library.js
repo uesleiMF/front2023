@@ -33,8 +33,8 @@ position: absolute;
 	top: 0;
 	left: 1px;
 	border-radius: 5px;
-	width: 22rem;
-	height: 60%;
+	width: 20rem;
+	height: 98%;
 	background-color: white;
 	
 	box-shadow: 0 6px 5px rgb(130, 23, 192);
