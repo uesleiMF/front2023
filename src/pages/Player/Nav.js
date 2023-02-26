@@ -25,37 +25,29 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 };
 
 const NavContainer = styled.div`
-	min-height: 10vh;
+	min-height: 20vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	@media screen and (max-width: 350px) {
 		position: fixed;
-		z-index: 10;
+		z-index: 15;
 		top: 0;
 		left: 0;
 		width: 100%;
 	}
 `;
 
-const H1 = styled.h1`
-	transition: all 0.5s ease;
 
-	@media screen and (max-width: 768px) {
-		visibility: ${(p) => (p.libraryStatus ? "hidden" : "visible")};
-		opacity: ${(p) => (p.libraryStatus ? "0" : "100")};
-		transition: all 0.5s ease;
-	}
-`;
 
 const Button = styled.button`
 	background: transparent;
 	border: none;
 	border-radius: 30%;
 	cursor: pointer;
-	box-shadow: 0 6px 5px rgb(130, 23, 192);
+	box-shadow: 0 6px 6px rgb(130, 23, 192);
 	border: 2px solid rgb(65, 65, 65);
-	padding: 0.2rem;
+	padding: 0.6rem;
 	transition: all 0.3s ease;
 	&:hover {
 		background: rgb(65, 65, 65);
@@ -66,10 +58,10 @@ const Button1 = styled.button`
 	background: transparent;
 	border: none;
 	border-radius: 30%;
-	box-shadow: 0 6px 5px rgb(130, 23, 192);
+	box-shadow: 0 6px 6px rgb(130, 23, 192);
 	cursor: pointer;
 	border: 2px solid rgb(65, 65, 65);
-	padding: 0.2rem;
+	padding: 0.6rem;
 	transition: all 0.3s ease;
 	&:hover {
 		background: rgb(65, 65, 65);
