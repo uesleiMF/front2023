@@ -1,5 +1,5 @@
 import { FaTh, FaRegChartBar, FaCommentAlt } from "react-icons/fa";
-import { BiImageAdd } from "react-icons/bi";
+import { GiLovers } from "react-icons/gi";
 
 const menu = [
   {
@@ -9,7 +9,7 @@ const menu = [
   },
   {
     title: "Adicionar Casais",
-    icon: <BiImageAdd />,
+    icon: <GiLovers/>,
     path: "/add-product",
   },
   {
