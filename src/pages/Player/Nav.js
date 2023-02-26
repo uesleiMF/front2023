@@ -8,9 +8,7 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 	return (
 		
 		
-		<div className="container">
-		<div className="card mt-4 bg-warning bg-opacity-75">
-		
+	
 		<NavContainer>
 			
 			<Button onClick={() => setLibraryStatus(!libraryStatus)}>
@@ -22,8 +20,7 @@ const Nav = ({ libraryStatus, setLibraryStatus }) => {
 				
 			</Button1>
 		</NavContainer>
-	</div>
-	</div>
+
 	);
 };
 

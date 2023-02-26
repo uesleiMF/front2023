@@ -3,15 +3,12 @@ import styled from "styled-components";
 
 const Song = ({ currentSong }) => {
 	return (
-		<div className="container ">
-			<div className="card mt-4 bg-warning bg-opacity-75">
-		<SongContainer>
+			<SongContainer>
 			<Img src={currentSong.cover} alt={currentSong.name}></Img>
 			<H1>{currentSong.name}</H1>
 			<H2>{currentSong.artist}</H2>
 		</SongContainer>
-		</div>
-		</div>
+		
 	);
 };
 

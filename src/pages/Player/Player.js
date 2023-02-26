@@ -85,9 +85,7 @@ const Player = ({
 
 	return (
 	
-		<div className="container">
-		<div className="card mt-4 mb-3 bg-warning bg-opacity-75">
-	
+		
 		<PlayerContainer>
 			<TimeControlContainer>
 				<P>{getTime(songInfo.currentTime || 0)}</P>
@@ -129,9 +127,6 @@ const Player = ({
 				/>
 			</PlayControlContainer>
 		</PlayerContainer>
-		</div>
-		
-		</div>
 	
 		
 		

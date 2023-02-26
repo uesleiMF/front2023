@@ -60,7 +60,9 @@ const App = () => {
 	return (
 		
    
-    
+		<div className="container">
+		<div className="card mt-4 mb-3 bg-warning bg-opacity-75">
+	
     <AppContainer libraryStatus={libraryStatus}>
 			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
 			<Song currentSong={currentSong} />
@@ -92,14 +94,15 @@ const App = () => {
 				src={currentSong.audio}
 			/>
 		</AppContainer>
-    
+    </div>
+	</div>
 	);
 };
 
 const AppContainer = styled.div`
 	transition: all 0.5s ease;
 	margin-left: ${(p) => (p.libraryStatus ? "20rem" : "0")};
-	@media screen and (max-width: 468px) {
+	@media screen and (max-width: 350px) {
 		margin-left: 0;
 	}
 `;
