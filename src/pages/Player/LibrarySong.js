@@ -75,7 +75,7 @@ const Img = styled.img`
 
 const H1 = styled.h3`
 	padding-left: 2rem;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 `;
 
 const H2 = styled.h4`
