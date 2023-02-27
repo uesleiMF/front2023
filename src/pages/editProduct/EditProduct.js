@@ -2,72 +2,72 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
-import CasalForm from "../../components/casal/casalForm/CasalForm";
+import ProductForm from "../../components/product/productForm/ProductForm";
 import {
-  getCasal,
-  getCasais,
+  getProduct,
+  getProducts,
   selectIsLoading,
-  selectCasal,
-  updateCasal,
-} from "../../redux/features/casal/casalSlice";
+  selectProduct,
+  updateProduct,
+} from "../../redux/features/product/productSlice";
 
-const EditCasal = () => {
+const EditProduct = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const isLoading = useSelector(selectIsLoading);
 
-  const casalEdit = useSelector(selectCasal);
+  const productEdit = useSelector(selectProduct);
 
-  const [casal, setCasal] = useState(casalEdit);
-  const [casalImage, setCasalImage] = useState("");
+  const [product, setProduct] = useState(productEdit);
+  const [productImage, setProductImage] = useState("");
   const [imagePreview, setImagePreview] = useState(null);
   const [description, setDescription] = useState("");
 
   useEffect(() => {
-    dispatch(getCasal(id));
+    dispatch(getProduct(id));
   }, [dispatch, id]);
 
   useEffect(() => {
-    setCasal(casalEdit);
+    setProduct(productEdit);
 
     setImagePreview(
-      casalEdit && casalEdit.image ? `${casalEdit.image.filePath}` : null
+      productEdit && productEdit.image ? `${productEdit.image.filePath}` : null
     );
 
     setDescription(
-      casalEdit && casalEdit.description ? casalEdit.description : ""
+      productEdit && productEdit.description ? productEdit.description : ""
     );
-  }, [casalEdit]);
+  }, [productEdit]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setCasal({ ...casal, [name]: value });
+    setProduct({ ...product, [name]: value });
   };
 
   const handleImageChange = (e) => {
-    setCasalImage(e.target.files[0]);
+    setProductImage(e.target.files[0]);
     setImagePreview(URL.createObjectURL(e.target.files[0]));
   };
 
-  const saveCasal = async (e) => {
+  const saveProduct = async (e) => {
     e.preventDefault();
     const formData = new FormData();
-    formData.append("name", casal?.name);
+    formData.append("name", product?.name);
 
-    formData.append("category", casal?.category);
-    formData.append("quantity", casal?.quantity);
-    formData.append("price", casal?.price);
-    formData.append("date", casal?.date);
+    formData.append("category", product?.category);
+    formData.append("quantity", product?.quantity);
+    formData.append("price", product?.price);
+    formData.append("date", product?.date);
     formData.append("description", description);
-    if (casalImage) {
-      formData.append("image", casalImage);
+    if (productImage) {
+      formData.append("image", productImage);
     }
 
     console.log(...formData);
 
-    await dispatch(updateCasal({ id, formData }));
-    await dispatch(getCasais());
+    await dispatch(updateProduct({ id, formData }));
+    await dispatch(getProducts());
     navigate("/dashboard");
   };
 
@@ -75,18 +75,18 @@ const EditCasal = () => {
     <div>
       {isLoading && <Loader />}
       <h3 className="--mt">Editar Casal</h3>
-      <CasalForm
-        casal={casal}
-       casalImage={casalImage}
+      <ProductForm
+        product={product}
+        productImage={productImage}
         imagePreview={imagePreview}
         description={description}
         setDescription={setDescription}
         handleInputChange={handleInputChange}
         handleImageChange={handleImageChange}
-        saveCasal={saveCasal}
+        saveProduct={saveProduct}
       />
     </div>
   );
 };
 
-export default EditCasal;
+export default EditProduct;

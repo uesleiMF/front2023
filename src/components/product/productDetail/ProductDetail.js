@@ -3,21 +3,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import useRedirectLoggedOutUser from "../../../customHook/useRedirectLoggedOutUser";
 import { selectIsLoggedIn } from "../../../redux/features/auth/authSlice";
-import { getCasal } from "../../../redux/features/casal/casalSlice";
+import { getProduct } from "../../../redux/features/product/productSlice";
 import Card from "../../card/Card";
 import { SpinnerImg } from "../../loader/Loader";
-import "./CasalDetail.scss";
+import "./ProductDetail.scss";
 import DOMPurify from "dompurify";
 
-const CasalDetail = () => {
+const ProductDetail = () => {
   useRedirectLoggedOutUser("/login");
   const dispatch = useDispatch();
 
   const { id } = useParams();
 
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  const { casal, isLoading, isError, message } = useSelector(
-    (state) => state.casal
+  const { product, isLoading, isError, message } = useSelector(
+    (state) => state.product
   );
 
   const stockStatus = (quantity) => {
@@ -29,7 +29,7 @@ const CasalDetail = () => {
 
   useEffect(() => {
     if (isLoggedIn === true) {
-      dispatch(getCasal(id));
+      dispatch(getProduct(id));
     }
 
     if (isError) {
@@ -42,56 +42,56 @@ const CasalDetail = () => {
       <h3 className="--mt">Sobre o Casal</h3>
       <Card cardClass="card">
         {isLoading && <SpinnerImg />}
-        {casal && (
+        {product && (
           <div className="detail">
             <Card cardClass="group">
-              {casal?.image ? (
+              {product?.image ? (
                 <img
-                  src={casal.image.filePath}
-                  alt={casal.image.fileName}
+                  src={product.image.filePath}
+                  alt={product.image.fileName}
                 />
               ) : (
                 <p>Nenhuma imagem definida para este Casal</p>
               )}
             </Card>
-            <h4>Casal: {stockStatus(casal.quantity)}</h4>
+            <h4>Casal: {stockStatus(product.quantity)}</h4>
             <hr />
             <h4>
-              <span className="badge">Casal: </span> &nbsp; {casal.name}
+              <span className="badge">Casal: </span> &nbsp; {product.name}
             </h4>
             <p>
-              <b>&rarr; Cod. : </b> {casal.sku}
+              <b>&rarr; Cod. : </b> {product.sku}
             </p>
             <p>
-              <b>&rarr; Cargo : </b> {casal.category}
+              <b>&rarr; Cargo : </b> {product.category}
             </p>
             <p>
               <b>&rarr; Ofertas : </b> {"R$"}
-              {casal.price}
+              {product.price}
             </p>
             <p>
-              <b>&rarr; Qtd : </b> {casal.quantity}
+              <b>&rarr; Qtd : </b> {product.quantity}
             </p>
             <p>
-              <b>&rarr; Aniversario : </b> {casal.date}
+              <b>&rarr; Aniversario : </b> {product.date}
             </p>
             <p>
               <b>&rarr; Total de Ofertas : </b> {"R$"}
-              {casal.price * casal.quantity}
+              {product.price * product.quantity}
             </p>
             <hr />
             <div
               dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(casal.description),
+                __html: DOMPurify.sanitize(product.description),
               }}
             ></div>
             <hr />
             <code className="--color-dark">
-              Created on: {casal.createdAt.toLocaleString("en-US")}
+              Created on: {product.createdAt.toLocaleString("en-US")}
             </code>
             <br />
             <code className="--color-dark">
-              Last Updated: {casal.updatedAt.toLocaleString("en-US")}
+              Last Updated: {product.updatedAt.toLocaleString("en-US")}
             </code>
           </div>
         )}
@@ -100,4 +100,4 @@ const CasalDetail = () => {
   );
 };
 
-export default CasalDetail;
+export default ProductDetail;

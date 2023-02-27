@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
-import CasalForm from "../../components/casal/casalForm/CasalForm";
+import ProductForm from "../../components/product/productForm/ProductForm";
 import {
-  createCasal,
+  createProduct,
   selectIsLoading,
-} from "../../redux/features/casal/casalSlice";
+} from "../../redux/features/product/productSlice";
 
 const initialState = {
   name: "",
@@ -16,25 +16,25 @@ const initialState = {
   price: "",
 };
 
-const AddCasal = () => {
+const AddProduct = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [casal, setCasal] = useState(initialState);
-  const [casalImage, setCasalImage] = useState("");
+  const [product, setProduct] = useState(initialState);
+  const [productImage, setProductImage] = useState("");
   const [imagePreview, setImagePreview] = useState(null);
   const [description, setDescription] = useState("");
 
   const isLoading = useSelector(selectIsLoading);
 
-  const { name, category, price, date, quantity, } = casal;
+  const { name, category, price, date, quantity, } = product;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setCasal({ ...casal, [name]: value });
+    setProduct({ ...product, [name]: value });
   };
 
   const handleImageChange = (e) => {
-    setCasalImage(e.target.files[0]);
+    setProductImage(e.target.files[0]);
     setImagePreview(URL.createObjectURL(e.target.files[0]));
   };
 
@@ -45,7 +45,7 @@ const AddCasal = () => {
     return sku;
   };
 
-  const saveCasal = async (e) => {
+  const saveProduct = async (e) => {
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", name);
@@ -55,11 +55,11 @@ const AddCasal = () => {
     formData.append("price", price);
     formData.append("date", date);
     formData.append("description", description);
-    formData.append("image", casalImage);
+    formData.append("image", productImage);
 
     console.log(...formData);
 
-    await dispatch(createCasal(formData));
+    await dispatch(createProduct(formData));
 
     navigate("/dashboard");
   };
@@ -68,18 +68,18 @@ const AddCasal = () => {
     <div>
       {isLoading && <Loader />}
       <h3 className="--mt">Adicionar novo Casal</h3>
-      <CasalForm
-        casal={casal}
-        casalImage={casalImage}
+      <ProductForm
+        product={product}
+        productImage={productImage}
         imagePreview={imagePreview}
         description={description}
         setDescription={setDescription}
         handleInputChange={handleInputChange}
         handleImageChange={handleImageChange}
-        saveCasal={saveCasal}
+        saveProduct={saveProduct}
       />
     </div>
   );
 };
 
-export default AddCasal;
+export default AddProduct;

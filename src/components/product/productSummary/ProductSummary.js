@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./CasalSummary.scss";
+import "./ProductSummary.scss";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { BsCartX } from "react-icons/bs";
 import {ImManWoman} from "react-icons/im";
@@ -13,11 +13,11 @@ import {
   selectCategory,
   selectOutOfStock,
   selectTotalStoreValue,
-} from "../../../redux/features/casal/casalSlice";
+} from "../../../redux/features/product/productSlice";
 
 // Icons
 const earningIcon = <AiFillDollarCircle size={40} color="#fff" />;
-const casalIcon = <ImManWoman size={40} color="#fff" />;
+const productIcon = <ImManWoman size={40} color="#fff" />;
 const categoryIcon = <BiCategory size={40} color="#fff" />;
 const outOfStockIcon = <BsCartX size={40} color="#fff" />;
 
@@ -26,26 +26,26 @@ export const formatNumbers = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
-const CasalSummary = ({ casais }) => {
+const ProductSummary = ({ products }) => {
   const dispatch = useDispatch();
   const totalStoreValue = useSelector(selectTotalStoreValue);
   const outOfStock = useSelector(selectOutOfStock);
   const category = useSelector(selectCategory);
 
   useEffect(() => {
-    dispatch(CALC_STORE_VALUE(casais));
-    dispatch(CALC_OUTOFSTOCK(casais));
-    dispatch(CALC_CATEGORY(casais));
-  }, [dispatch, casais]);
+    dispatch(CALC_STORE_VALUE(products));
+    dispatch(CALC_OUTOFSTOCK(products));
+    dispatch(CALC_CATEGORY(products));
+  }, [dispatch, products]);
 
   return (
     <div className="product-summary">
       <h3 className="--mt">Casais Cadastrados</h3>
       <div className="info-summary">
         <InfoBox
-          icon={casalIcon}
+          icon={productIcon}
           title={"Total de Casais"}
-          count={casais.length}
+          count={products.length}
           bgColor="card1"
         />
         <InfoBox
@@ -71,4 +71,4 @@ const CasalSummary = ({ casais }) => {
   );
 };
 
-export default CasalSummary;
+export default ProductSummary;

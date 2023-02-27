@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { SpinnerImg } from "../../loader/Loader";
-import "./casalList.scss";
+import "./productList.scss";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import { AiOutlineEye } from "react-icons/ai";
 import Search from "../../search/Search";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  FILTER_CASAIS,
-  selectFilteredCasais,
-} from "../../../redux/features/casal/filterSlice";
+  FILTER_PRODUCTS,
+  selectFilteredPoducts,
+} from "../../../redux/features/product/filterSlice";
 import ReactPaginate from "react-paginate";
 import { confirmAlert } from "react-confirm-alert";
 import "react-confirm-alert/src/react-confirm-alert.css";
 import {
-  deleteCasal,
-  getCasais,
-} from "../../../redux/features/casal/casalSlice";
+  deleteProduct,
+  getProducts,
+} from "../../../redux/features/product/productSlice";
 import { Link } from "react-router-dom";
 
-const CasalList = ({ casais, isLoading }) => {
+const ProductList = ({ products, isLoading }) => {
   const [search, setSearch] = useState("");
-  const filteredCasais = useSelector(selectFilteredCasais);
+  const filteredProducts = useSelector(selectFilteredPoducts);
 
   const dispatch = useDispatch();
 
@@ -32,10 +32,10 @@ const CasalList = ({ casais, isLoading }) => {
     return text;
   };
 
-  const delCasal = async (id) => {
+  const delProduct = async (id) => {
     console.log(id);
-    await dispatch(deleteCasal(id));
-    await dispatch(getCasais());
+    await dispatch(deleteProduct(id));
+    await dispatch(getProducts());
   };
 
   const confirmDelete = (id) => {
@@ -45,7 +45,7 @@ const CasalList = ({ casais, isLoading }) => {
       buttons: [
         {
           label: "Delete",
-          onClick: () => delCasal(id),
+          onClick: () => delProduct(id),
         },
         {
           label: "Cancel",
@@ -64,19 +64,19 @@ const CasalList = ({ casais, isLoading }) => {
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
 
-    setCurrentItems(filteredCasais.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(filteredCasais.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, filteredCasais]);
+    setCurrentItems(filteredProducts.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(filteredProducts.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, filteredProducts]);
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % filteredCasais.length;
+    const newOffset = (event.selected * itemsPerPage) % filteredProducts.length;
     setItemOffset(newOffset);
   };
   //   End Pagination
 
   useEffect(() => {
-    dispatch(FILTER_CASAIS({ casais: casais, search }));
-  }, [casais, search, dispatch]);
+    dispatch(FILTER_PRODUCTS({ products, search }));
+  }, [products, search, dispatch]);
 
   return (
     <div className="product-list">
@@ -97,7 +97,7 @@ const CasalList = ({ casais, isLoading }) => {
         {isLoading && <SpinnerImg />}
 
         <div className="table">
-          {!isLoading && casais.length === 0 ? (
+          {!isLoading && products.length === 0 ? (
             <p>-- Nenhum casal encontrado, adicione um casal...</p>
           ) : (
             <table>
@@ -115,8 +115,8 @@ const CasalList = ({ casais, isLoading }) => {
               </thead>
 
               <tbody>
-                {currentItems.map((casal, index) => {
-                  const { _id, name, category, price, date, quantity } = casal;
+                {currentItems.map((product, index) => {
+                  const { _id, name, category, price, date, quantity } = product;
                   return (
                     <tr key={_id}>
                       <td>{index + 1}</td>
@@ -180,4 +180,4 @@ const CasalList = ({ casais, isLoading }) => {
   );
 };
 
-export default CasalList;
+export default ProductList;
