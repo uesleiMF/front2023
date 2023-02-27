@@ -3,22 +3,22 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import Card from "../../card/Card";
 
-import "./ProductForm.scss";
+import "./CasalForm.scss";
 
-const ProductForm = ({
-  product,
-  productImage,
+const CasalForm = ({
+  casal,
+  casalImage,
   imagePreview,
   description,
   setDescription,
   handleInputChange,
   handleImageChange,
-  saveProduct,
+  saveCasal,
 }) => {
   return (
     <div className="add-product">
       <Card cardClass={"card"}>
-        <form onSubmit={saveProduct}>
+        <form onSubmit={saveCasal}>
           <Card cardClass={"group"}>
             <label>Imagem do Casal</label>
             <code className="--color-dark">
@@ -43,7 +43,7 @@ const ProductForm = ({
             type="text"
             placeholder="Nome do Casal"
             name="name"
-            value={product?.name}
+            value={casal?.name}
             onChange={handleInputChange}
           />
           <label>Aniversario:</label>
@@ -51,7 +51,7 @@ const ProductForm = ({
             type="text"
             placeholder="Aniversario"
             name="date"
-            value={product?.date}
+            value={casal?.date}
             onChange={handleInputChange}
           />
           <label>Cargo:</label>
@@ -59,7 +59,7 @@ const ProductForm = ({
             type="text"
             placeholder="Cargo"
             name="category"
-            value={product?.category}
+            value={casal?.category}
             onChange={handleInputChange}
           />
 
@@ -68,7 +68,7 @@ const ProductForm = ({
             type="text"
             placeholder="Ofertas"
             name="price"
-            value={product?.price}
+            value={casal?.price}
             onChange={handleInputChange}
           />
 
@@ -77,7 +77,7 @@ const ProductForm = ({
             type="text"
             placeholder="Qtd"
             name="quantity"
-            value={product?.quantity}
+            value={casal?.quantity}
             onChange={handleInputChange}
           />
           
@@ -87,8 +87,8 @@ const ProductForm = ({
             theme="snow"
             value={description}
             onChange={setDescription}
-            modules={ProductForm.modules}
-            formats={ProductForm.formats}
+            modules={CasalForm.modules}
+            formats={CasalForm.formats}
           />
 
           <div className="--my">
@@ -102,7 +102,7 @@ const ProductForm = ({
   );
 };
 
-ProductForm.modules = {
+CasalForm.modules = {
   toolbar: [
     [{ header: "1" }, { header: "2" }, { font: [] }],
     [{ size: [] }],
@@ -118,7 +118,7 @@ ProductForm.modules = {
     ["clean"],
   ],
 };
-ProductForm.formats = [
+CasalForm.formats = [
   "header",
   "font",
   "size",
@@ -139,4 +139,4 @@ ProductForm.formats = [
   "align",
 ];
 
-export default ProductForm;
+export default CasalForm;

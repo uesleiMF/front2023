@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import ProductList from "../../components/product/productList/ProductList";
-import ProductSummary from "../../components/product/productSummary/ProductSummary";
+import CasalList from "../../components/casal/casalList/CasalList";
+import CasalSummary from "../../components/casal/casalSummary/CasalSummary";
 import useRedirectLoggedOutUser from "../../customHook/useRedirectLoggedOutUser";
 import { selectIsLoggedIn } from "../../redux/features/auth/authSlice";
-import { getProducts } from "../../redux/features/product/productSlice";
+import { getCasais } from "../../redux/features/casal/casalSlice";
 
 const Dashboard = () => {
   useRedirectLoggedOutUser("/login");
   const dispatch = useDispatch();
 
   const isLoggedIn = useSelector(selectIsLoggedIn);
-  const { products, isLoading, isError, message } = useSelector(
-    (state) => state.product
+  const { casais, isLoading, isError, message } = useSelector(
+    (state) => state.casal
   );
 
   useEffect(() => {
     if (isLoggedIn === true) {
-      dispatch(getProducts());
+      dispatch(getCasais());
     }
 
     if (isError) {
@@ -27,8 +27,8 @@ const Dashboard = () => {
 
   return (
     <div>
-      <ProductSummary products={products} />
-      <ProductList products={products} isLoading={isLoading} />
+      <CasalSummary products={casais} />
+      <CasalList products={casais} isLoading={isLoading} />
     </div>
   );
 };

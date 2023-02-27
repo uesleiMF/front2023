@@ -1,10 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import productService from "./productService";
+import casalService from "./casalService";
 import { toast } from "react-toastify";
 
 const initialState = {
-  product: null,
-  products: [],
+  casal: null,
+  casais: [],
   isError: false,
   isSuccess: false,
   isLoading: false,
@@ -15,11 +15,11 @@ const initialState = {
 };
 
 // Create New Product
-export const createProduct = createAsyncThunk(
-  "products/create",
+export const createCasal = createAsyncThunk(
+  "casais/create",
   async (formData, thunkAPI) => {
     try {
-      return await productService.createProduct(formData);
+      return await casalService.createCasal(formData);
     } catch (error) {
       const message =
         (error.response &&
@@ -34,11 +34,11 @@ export const createProduct = createAsyncThunk(
 );
 
 // Get all products
-export const getProducts = createAsyncThunk(
-  "products/getAll",
+export const getCasais = createAsyncThunk(
+  "casais/getAll",
   async (_, thunkAPI) => {
     try {
-      return await productService.getProducts();
+      return await casalService.getCasais();
     } catch (error) {
       const message =
         (error.response &&
@@ -53,11 +53,11 @@ export const getProducts = createAsyncThunk(
 );
 
 // Delete a Product
-export const deleteProduct = createAsyncThunk(
-  "products/delete",
+export const deleteCasal = createAsyncThunk(
+  "casais/delete",
   async (id, thunkAPI) => {
     try {
-      return await productService.deleteProduct(id);
+      return await casalService.deleteCasal(id);
     } catch (error) {
       const message =
         (error.response &&
@@ -72,11 +72,11 @@ export const deleteProduct = createAsyncThunk(
 );
 
 // Get a product
-export const getProduct = createAsyncThunk(
-  "products/getProduct",
+export const getCasal = createAsyncThunk(
+  "casais/getCasal",
   async (id, thunkAPI) => {
     try {
-      return await productService.getProduct(id);
+      return await casalService.getCasal(id);
     } catch (error) {
       const message =
         (error.response &&
@@ -90,11 +90,11 @@ export const getProduct = createAsyncThunk(
   }
 );
 // Update product
-export const updateProduct = createAsyncThunk(
-  "products/updateProduct",
+export const updateCasal = createAsyncThunk(
+  "casais/updateCasal",
   async ({ id, formData }, thunkAPI) => {
     try {
-      return await productService.updateProduct(id, formData);
+      return await casalService.updateCasal(id, formData);
     } catch (error) {
       const message =
         (error.response &&
@@ -108,17 +108,17 @@ export const updateProduct = createAsyncThunk(
   }
 );
 
-const productSlice = createSlice({
-  name: "product",
+const casalSlice = createSlice({
+  name: "casal",
   initialState,
   reducers: {
     CALC_STORE_VALUE(state, action) {
-      const products = action.payload;
+      const casais = action.payload;
       const array = [];
-      products.map((item) => {
+      casais.map((item) => {
         const { price, quantity } = item;
-        const productValue = price * quantity;
-        return array.push(productValue);
+        const casalValue = price * quantity;
+        return array.push(casalValue);
       });
       const totalValue = array.reduce((a, b) => {
         return a + b;
@@ -126,9 +126,9 @@ const productSlice = createSlice({
       state.totalStoreValue = totalValue;
     },
     CALC_OUTOFSTOCK(state, action) {
-      const products = action.payload;
+      const casais = action.payload;
       const array = [];
-      products.map((item) => {
+      casais.map((item) => {
         const { quantity } = item;
 
         return array.push(quantity);
@@ -142,9 +142,9 @@ const productSlice = createSlice({
       state.outOfStock = count;
     },
     CALC_CATEGORY(state, action) {
-      const products = action.payload;
+      const casais = action.payload;
       const array = [];
-      products.map((item) => {
+      casais.map((item) => {
         const { category } = item;
 
         return array.push(category);
@@ -155,79 +155,79 @@ const productSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(createProduct.pending, (state) => {
+      .addCase(createCasal.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(createProduct.fulfilled, (state, action) => {
+      .addCase(createCasal.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
         console.log(action.payload);
-        state.products.push(action.payload);
+        state.casais.push(action.payload);
         toast.success("Product added successfully");
       })
-      .addCase(createProduct.rejected, (state, action) => {
+      .addCase(createCasal.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(getProducts.pending, (state) => {
+      .addCase(getCasais.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getProducts.fulfilled, (state, action) => {
+      .addCase(getCasais.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
         console.log(action.payload);
-        state.products = action.payload;
+        state.casais = action.payload;
       })
-      .addCase(getProducts.rejected, (state, action) => {
+      .addCase(getCasais.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(deleteProduct.pending, (state) => {
+      .addCase(deleteCasal.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(deleteProduct.fulfilled, (state, action) => {
+      .addCase(deleteCasal.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
         toast.success("Product deleted successfully");
       })
-      .addCase(deleteProduct.rejected, (state, action) => {
+      .addCase(deleteCasal.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(getProduct.pending, (state) => {
+      .addCase(getCasal.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(getProduct.fulfilled, (state, action) => {
+      .addCase(getCasal.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
-        state.product = action.payload;
+        state.casal = action.payload;
       })
-      .addCase(getProduct.rejected, (state, action) => {
+      .addCase(getCasal.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
       })
-      .addCase(updateProduct.pending, (state) => {
+      .addCase(updateCasal.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(updateProduct.fulfilled, (state, action) => {
+      .addCase(updateCasal.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
         toast.success("Product updated successfully");
       })
-      .addCase(updateProduct.rejected, (state, action) => {
+      .addCase(updateCasal.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.message = action.payload;
@@ -237,12 +237,12 @@ const productSlice = createSlice({
 });
 
 export const { CALC_STORE_VALUE, CALC_OUTOFSTOCK, CALC_CATEGORY } =
-  productSlice.actions;
+  casalSlice.actions;
 
-export const selectIsLoading = (state) => state.product.isLoading;
-export const selectProduct = (state) => state.product.product;
-export const selectTotalStoreValue = (state) => state.product.totalStoreValue;
-export const selectOutOfStock = (state) => state.product.outOfStock;
-export const selectCategory = (state) => state.product.category;
+export const selectIsLoading = (state) => state.casal.isLoading;
+export const selectCasal = (state) => state.casal.casal;
+export const selectTotalStoreValue = (state) => state.casal.totalStoreValue;
+export const selectOutOfStock = (state) => state.casal.outOfStock;
+export const selectCategory = (state) => state.casal.category;
 
-export default productSlice.reducer;
+export default casalSlice.reducer;

@@ -2,42 +2,42 @@ import axios from "axios";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
-const API_URL = `${BACKEND_URL}/api/products/`;
+const API_URL = `${BACKEND_URL}/api/casais/`;
 
 // Create New Product
-const createProduct = async (formData) => {
+const createCasal = async (formData) => {
   const response = await axios.post(API_URL, formData);
   return response.data;
 };
 
 // Get all products
-const getProducts = async () => {
+const getCasais = async () => {
   const response = await axios.get(API_URL);
   return response.data;
 };
 
 // Delete a Product
-const deleteProduct = async (id) => {
+const deleteCasal = async (id) => {
   const response = await axios.delete(API_URL + id);
   return response.data;
 };
 // Get a Product
-const getProduct = async (id) => {
+const getCasal = async (id) => {
   const response = await axios.get(API_URL + id);
   return response.data;
 };
 // Update Product
-const updateProduct = async (id, formData) => {
+const updateCasal = async (id, formData) => {
   const response = await axios.patch(`${API_URL}${id}`, formData);
   return response.data;
 };
 
-const productService = {
-  createProduct,
-  getProducts,
-  getProduct,
-  deleteProduct,
-  updateProduct,
+const casalService = {
+  createCasal: createCasal,
+  getCasais: getCasais,
+  getCasal: getCasal,
+  deleteCasal: deleteCasal,
+  updateCasal: updateCasal,
 };
 
-export default productService;
+export default casalService;
