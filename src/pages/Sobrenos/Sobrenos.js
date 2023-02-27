@@ -56,7 +56,25 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 >
                   <FaWhatsapp />
                 </a>
+                <h3 className="card-title">(94)99972-7849</h3>
               </Social>
+
+
+              <Social>
+                <a
+                  href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
+iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
+m6gswbmRrrizJGSQPBvKtAw5IX4QByzZhWL4r6wHPt5aufjRUsxeBDqHQ7r6hpw
+ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
+3Uh-FxfqVWMeHC96SiWFGNArvfLqF4i93-9suwF9cKvcduJ2QyAqAlVzs/"
+                >
+                  <FaWhatsapp />
+                </a>
+                <h3 className="card-title">(94)99972-7849</h3>
+              </Social>
+
+
+
             </div>
           </div>
 
@@ -84,6 +102,21 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 >
                   <FaWhatsapp />
                 </a>
+                <h3 className="card-title">(94)99972-7849</h3>
+              </Social>
+
+
+              <Social>
+                <a
+                  href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
+iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
+m6gswbmRrrizJGSQPBvKtAw5IX4QByzZhWL4r6wHPt5aufjRUsxeBDqHQ7r6hpw
+ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
+3Uh-FxfqVWMeHC96SiWFGNArvfLqF4i93-9suwF9cKvcduJ2QyAqAlVzs/"
+                >
+                  <FaWhatsapp />
+                </a>
+                <h3 className="card-title">(94)99972-7849</h3>
               </Social>
             </div>
           </div>
@@ -119,6 +152,21 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 >
                   <FaWhatsapp />
                 </a>
+                <h3 className="card-title">(94)99972-7849</h3>
+              </Social>
+
+
+              <Social>
+                <a
+                  href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
+iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
+m6gswbmRrrizJGSQPBvKtAw5IX4QByzZhWL4r6wHPt5aufjRUsxeBDqHQ7r6hpw
+ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
+3Uh-FxfqVWMeHC96SiWFGNArvfLqF4i93-9suwF9cKvcduJ2QyAqAlVzs/"
+                >
+                  <FaWhatsapp />
+                </a>
+                <h3 className="card-title">(94)99972-7849</h3>
               </Social>
             </div>
           </div>
@@ -137,6 +185,19 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <h4 className="card-title">___________</h4>
               <h4 className="card-title"> & </h4>
               <h4 className="card-title">___________</h4>
+              <Social>
+                <a
+                  href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
+iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
+m6gswbmRrrizJGSQPBvKtAw5IX4QByzZhWL4r6wHPt5aufjRUsxeBDqHQ7r6hpw
+ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
+3Uh-FxfqVWMeHC96SiWFGNArvfLqF4i93-9suwF9cKvcduJ2QyAqAlVzs/"
+                >
+                  <FaWhatsapp />
+                </a>
+                <h3 className="card-title">(94)99972-7849</h3>
+              </Social>
+
 
               <Social>
                 <a
@@ -148,6 +209,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 >
                   <FaWhatsapp />
                 </a>
+                <h3 className="card-title">(94)99972-7849</h3>
               </Social>
             </div>
           </div>
@@ -166,6 +228,19 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
               <h4 className="card-title">Ueslei</h4>
               <h4 className="card-title"> & </h4>
               <h4 className="card-title">Jessica</h4>
+              <Social>
+                <a
+                  href="  https://api.whatsapp.com/send?phone=5591982390708&data=AWDy3Hf-oQfWn7Syzd8pJ_MlOjYIoghvjhfgubtS_qKP9hVbOUKymlrhXKhaxMF_4Z7ypOsbpTadf2EkRTGbXsjO7NYeJx3i
+iOpao7H5F8u49KPACy0Wy4CObKp6eaOXZy0QClfFlEQ-jGMKpU1qPCD-2r6HchNmCDZ5CpGwRa-v7iOnavOjIFO5H7oW-C1wvYOEuYgUuHue3xsLTHXo9-4Aw2N5ywN1XdQ3TH8h53tHzjPlSC1cdFh9x2Ot4lWxWW
+m6gswbmRrrizJGSQPBvKtAw5IX4QByzZhWL4r6wHPt5aufjRUsxeBDqHQ7r6hpw
+ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
+3Uh-FxfqVWMeHC96SiWFGNArvfLqF4i93-9suwF9cKvcduJ2QyAqAlVzs/"
+                >
+                  <FaWhatsapp />
+                </a>
+                <h3 className="card-title">(94)99972-7849</h3>
+              </Social>
+
 
               <Social>
                 <a
@@ -177,6 +252,7 @@ ls&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwAR
                 >
                   <FaWhatsapp />
                 </a>
+                <h3 className="card-title">(94)99972-7849</h3>
               </Social>
             </div>
           </div>
