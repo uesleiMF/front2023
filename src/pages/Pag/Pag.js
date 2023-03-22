@@ -352,8 +352,8 @@ export default function Home() {
                 />    </div>
     <div class="flip-card-back">
       <h1>CELULA</h1>
-      <h2>UM SO PROPOSITO</h2>
-      <p>FOLHA 10 QUADRA 00 LOTE 00</p>
+      <h3>UM SO PROPOSITO</h3>
+      <h4>FOLHA 10 QUADRA 00 LOTE 00</h4>
      
       <Social>
     
