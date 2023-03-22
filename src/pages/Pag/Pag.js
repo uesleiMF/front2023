@@ -337,9 +337,82 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
+          <div class="col-4 p-2">
+         
+          <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img
+                  src={c1}
+                  alt="bo"
+                 
+                  height="200px"
+                  className="card-img-top"
+                />    </div>
+    <div class="flip-card-back">
+      <h1>CELULA</h1>
+      <p>clique na Localização</p>
+     
+    
+      <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+             <p>LOCALIZAÇÃO</p>
+            
+            </a>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img
+                  src={c1}
+                  alt="bo"
+                 
+                  height="200px"
+                  className="card-img-top"
+                />    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div> 
+</div>
+
+
+<div class="col-4 p-2">
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <img
+                  src={c1}
+                  alt="bo"
+                 
+                  height="200px"
+                  className="card-img-top"
+                />    </div>
+    <div class="flip-card-back">
+      <h1>John Doe</h1>
+      <p>Architect & Engineer</p>
+      <p>We love that guy</p>
+    </div>
+  </div>
+</div> 
+</div>
+  </div>
+</div> 
+
+
+
+
+       
       <div className="card mt-4 mb-3 bg-info">
         <h5 className="mx-3 my-3 text-center">
           CONHEÇAM NOSSAS MIDIAS SOCIAIS **MINISTERIO AMAI**!{" "}
