@@ -168,177 +168,8 @@ export default function Home() {
 
       <div className="card mt-4 bg-success">
         <div className="row mb-3">
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c1}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c2}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c3}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c2}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary "></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c1}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c2}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c1}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c2}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 p-3">
-            <div className="card">
-              <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                <img
-                  src={c1}
-                  alt="bo"
-                  width="25px"
-                  height="100px"
-                  className="card-img-top"
-                />
-              </a>
-
-              <div className="card-body">
-                <h8 className="card-title">FOLHA 17 QUADRA 13 LOTE 09</h8>
-                <span className="badge bg-primary"></span>
-              </div>
-            </div>
-          </div>
-
+         
+         
           <div class="col-4 p-2">
          
           <div class="flip-card">
@@ -372,43 +203,309 @@ export default function Home() {
 </div>
 
 <div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-    <img
-                  src={c1}
-                  alt="bo"
-                 
-                  height="200px"
-                  className="card-img-top"
-                />    </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
     </div>
   </div>
 </div> 
 </div>
 
 
-<div class="col-4 p-2">
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-    <img
-                  src={c1}
-                  alt="bo"
-                 
-                  height="200px"
-                  className="card-img-top"
-                />    </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c3}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
     </div>
   </div>
 </div> 
