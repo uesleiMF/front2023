@@ -352,13 +352,19 @@ export default function Home() {
                 />    </div>
     <div class="flip-card-back">
       <h1>CELULA</h1>
-      <p>clique na Localização</p>
+      <h2>UM SO PROPOSITO</h2>
+      <p>FOLHA 10 QUADRA 00 LOTE 00</p>
      
+      <Social>
     
-      <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-             <p>LOCALIZAÇÃO</p>
+            <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+      
+      <FaFacebookSquare />
             
             </a>
+
+            </Social>
+            
     </div>
   </div>
 </div> 

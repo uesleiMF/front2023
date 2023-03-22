@@ -71,28 +71,20 @@ export const Social = styled.div`
   }
 
   
-  s {
+  b {
     font-size: 2.5rem;
-    color: #00ff00;
+    color: #3a6cdf;
     text-decoration: none;
+    justify-content: center;
+  align-items: center;
+ 
+ 
+
   }
 
+
  
-  b {
-   
-    font-size: 3.5rem;
-    color: #A020F0;
-    text-decoration: none;
-    justify-content: center;
-  align-items: center;
-   
-  }
-  c {
-    font-size: 6.5rem;
-    color: #A020F0;
-    text-decoration: none;
-    justify-content: center;
-  align-items: center;
+ 
     
   }
 `;
