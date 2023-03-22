@@ -15,10 +15,11 @@ import c8 from "../../components/Img/c8.jpg";
 import c9 from "../../components/Img/c9.jpg";
 import ieq from "../../components/Img/ieq2.jpg";
 
+import { BsFillGeoAltFill } from "react-icons/bs";
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
-
 import { Social } from "./styles";
+import { Icon } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -351,19 +352,19 @@ export default function Home() {
                   className="card-img-top"
                 />    </div>
     <div class="flip-card-back">
-      <h1>CELULA</h1>
-      <h3>UM SO PROPOSITO</h3>
-      <h4>FOLHA 10 QUADRA 00 LOTE 00</h4>
+      <h3>CELULA</h3>
+      <h5>UM SO PROPOSITO</h5>
+      <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
      
-      <Social>
+      <Icon>
     
             <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
       
-      <FaFacebookSquare />
+      <BsFillGeoAltFill />
             
             </a>
 
-            </Social>
+            </Icon>
             
     </div>
   </div>

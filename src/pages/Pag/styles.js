@@ -71,22 +71,23 @@ export const Social = styled.div`
   }
 
   
-  b {
-    font-size: 2.5rem;
-    color: #3a6cdf;
+
+`;
+
+export const Icon = styled.div`
+  a {
+    font-size: 3.5rem;
+    color: #00ff00;
     text-decoration: none;
     justify-content: center;
   align-items: center;
- 
- 
+  display: flex;
+  margin:  1.8rem;
 
   }
 
-
+  
  
- 
-    
-  }
 `;
 export const CadContainer = styled.div`
   padding: 4rem 4rem 1rem 4rem;
