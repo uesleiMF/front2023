@@ -327,7 +327,7 @@ export default function Home() {
   </div>
 </div> 
 </div>
-<div class="col-4 p-3">
+<div class="col-4 p-2">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -358,7 +358,7 @@ export default function Home() {
 </div> 
 </div>
 
-<div class="col-4 p-3">
+<div class="col-4 p-2">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -389,7 +389,7 @@ export default function Home() {
 </div> 
 </div>
 
-<div class="col-4 p-3">
+<div class="col-4 p-2">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -419,38 +419,7 @@ export default function Home() {
   </div>
 </div> 
 </div>
-<div class="col-4 p-3">
-         
-         <div class="flip-card">
- <div class="flip-card-inner">
-   <div class="flip-card-front">
-   <img
-                 src={c2}
-                 alt="bo"
-                
-                 height="200px"
-                 className="card-img-top"
-               />    </div>
-   <div class="flip-card-back">
-     <h3>CELULA</h3>
-     <h5>UM SO PROPOSITO</h5>
-     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
-    
-     <Icon>
-   
-           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-     
-     <BsFillGeoAltFill />
-           
-           </a>
-
-           </Icon>
-    </div>
-  </div>
-</div> 
-</div>
-
-<div class="col-4 p-3">
+<div class="col-4 p-2">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -481,7 +450,38 @@ export default function Home() {
 </div> 
 </div>
 
-<div class="col-4 p-3">
+<div class="col-4 p-2">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-2">
          
          <div class="flip-card">
  <div class="flip-card-inner">
