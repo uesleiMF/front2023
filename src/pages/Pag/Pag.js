@@ -126,48 +126,49 @@ export default function Home() {
         <div></div>
       </div>
 
-      <div className="card mt-4 bg-info">
-        <div className="row mb-3">
-         
-              <h3 className="mx-3 my-3 text-center ">
-                
-                Visite-nós em nossa (Igreja)
-              </h3>
-              <h4 className="mx-3 my-3 text-center "> Ou uma </h4>
-              <h4 className="mx-4 my-4 text-center ">
-             
-                (Celula) mais proxima de sua casa
-              </h4>
+      <div className="card mt-4 bg-warning bg-opacity-50">
+        
+        <p className="mx-3 my-3 mb-0 text-center fs-2 fw-bold">
+          {" "}
+          VISITE-NOS 
+        </p>
+       
+        <p className="mx-3 my-3 text-center fs-3 fw-bold">
+          {" "}
+          CLIQUE NA IMAGEM ABAIXO:
+        </p>
 
-              <h4 className="mx-3 my-3 text-center">
-              
-                CLIQUE EM UMA DAS IMAGENS ABAIXO:
-              </h4>
+        <Logo>
+          <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+            <img src={ieq} alt="bo" />
+          </a>
+        </Logo>
 
-            
+        <p className="mx-3 my-3 text-center fs-3 fw-bold">IEQ-SEDE</p>
 
-              <Logo>
-                <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-                  <img src={ieq} alt="bo" />
-                </a>
+        <p className="mx-3 my-3 mb-0 text-center fs-2 fw-bold">
+          Igreja Do Evangélio Quadrangular!
+        </p>
+        <p className="mx-3 my-3 text-center fs-3 fw-bold"> Marabá-Pá</p>
+      </div>
+    
 
-               </Logo>
+    <div className="card mt-4 bg-success bg-opacity-50">
+      <div className="row mb-3">
+      <p className="mx-3 my-3 mb-0 text-center fs-2 fw-bold">
+          {" "}
+          VISITE-NOS 
+        </p>
+       
+        <p className="mx-3 my-3 text-center fs-3 fw-bold">
+          {" "}
+          CLIQUE NAS IMAGENS ABAIXO:
+        </p>
+        <p className="mx-3 my-3 text-center fs-3 fw-bold">
+          {" "}
+         E SEJÁ DIRECIONADO PARA UMA CELULA MAIS PROXIMA DE SUA CASA:
+        </p>
 
-                <h4 className="mx-3 my-3 text-center ">IEQ</h4>
-                <h5 className="mx-3 my-3 text-center ">
-                  Igreja Do Evangélio Quadrangular
-                </h5>
-                <h5 className="mx-3 my-3 text-center ">
-                  Nova-Marabá ---Marabá-Pá
-                </h5>
-             
-
-            </div>
-          </div>
-
-
-      <div className="card mt-4 bg-success">
-        <div className="row mb-3">
          
          
           <div class="col-4 p-2">
@@ -326,7 +327,7 @@ export default function Home() {
   </div>
 </div> 
 </div>
-<div class="col-4 p-2">
+<div class="col-4 p-3">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -357,7 +358,7 @@ export default function Home() {
 </div> 
 </div>
 
-<div class="col-4 p-2">
+<div class="col-4 p-3">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -388,7 +389,7 @@ export default function Home() {
 </div> 
 </div>
 
-<div class="col-4 p-2">
+<div class="col-4 p-3">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -418,38 +419,7 @@ export default function Home() {
   </div>
 </div> 
 </div>
-<div class="col-4 p-2">
-         
-         <div class="flip-card">
- <div class="flip-card-inner">
-   <div class="flip-card-front">
-   <img
-                 src={c2}
-                 alt="bo"
-                
-                 height="200px"
-                 className="card-img-top"
-               />    </div>
-   <div class="flip-card-back">
-     <h3>CELULA</h3>
-     <h5>UM SO PROPOSITO</h5>
-     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
-    
-     <Icon>
-   
-           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-     
-     <BsFillGeoAltFill />
-           
-           </a>
-
-           </Icon>
-    </div>
-  </div>
-</div> 
-</div>
-
-<div class="col-4 p-2">
+<div class="col-4 p-3">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -480,7 +450,38 @@ export default function Home() {
 </div> 
 </div>
 
-<div class="col-4 p-2">
+<div class="col-4 p-3">
+         
+         <div class="flip-card">
+ <div class="flip-card-inner">
+   <div class="flip-card-front">
+   <img
+                 src={c2}
+                 alt="bo"
+                
+                 height="200px"
+                 className="card-img-top"
+               />    </div>
+   <div class="flip-card-back">
+     <h3>CELULA</h3>
+     <h5>UM SO PROPOSITO</h5>
+     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
+    
+     <Icon>
+   
+           <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
+     
+     <BsFillGeoAltFill />
+           
+           </a>
+
+           </Icon>
+    </div>
+  </div>
+</div> 
+</div>
+
+<div class="col-4 p-3">
          
          <div class="flip-card">
  <div class="flip-card-inner">
@@ -512,6 +513,7 @@ export default function Home() {
 </div>
   </div>
 </div> 
+
 
 
 
