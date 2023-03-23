@@ -494,10 +494,10 @@ export default function Home() {
                  className="card-img-top"
                />    </div>
    <div class="flip-card-back">
-     <h3>CELULA</h3>
-     <h5>UM SO PROPOSITO</h5>
-     <h5>FOLHA 10 QUADRA 00 LOTE 00</h5>
-    
+   <p className="mx-3 my-3 mb-0 text-center fs-5 fw-bold">ENDEREÇO:</p>
+   <p className="mx-3 my-3 mb-0 text-center fs-6 fw-bold">FOLHA 10 QUADRA 00 LOTE 00</p>
+   <p className="mx-3 my-3 mb-0 text-center fs-6 fw-bold">LOCALIZAÇÃO ABAIXO</p>
+  
      <Icon>
    
            <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
