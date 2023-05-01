@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-out;
+  }
+  
+  .icon:hover {
+    transform: rotate(360deg);
+  }
+  
+  .icon1 {
+    top: 50%;
+    left: 10%;
+  }
+  
+  .icon2 {
+    top: 10%;
+    right: 10%;
+  }
+  
+  .icon3 {
+    bottom: 10%;
+    right: 10%;
+  }

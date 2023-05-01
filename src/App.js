@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//import Home from "./pages/Home/Home";
+import Home from "./pages/Home/home";
 import Pag from "./pages/Pag/Pag";
 import Sobrenos from "./pages/Sobrenos/Sobrenos";
 import Login from "./pages/auth/Login";
@@ -29,6 +29,8 @@ import Player from "./pages/Player/App";
 
 axios.defaults.withCredentials = true;
 
+
+
 function App() {
   const dispatch = useDispatch();
 
@@ -39,6 +41,7 @@ function App() {
     }
     loginStatus();
   }, [dispatch]);
+  
 
   return (
     <BrowserRouter>
@@ -49,7 +52,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/pag" element={<Pag/>} />
         <Route path="/sobrenos" element={<Sobrenos />} />
+        <Route path="/sobrenos" element={<Sobrenos />} />
+       
+
         <Route path="/app" element={<Player />} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot" element={<Forgot />} />
         <Route path="/resetpassword/:resetToken" element={<Reset />} />

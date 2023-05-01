@@ -1,3 +1,9 @@
+.container {
+  position: relative;
+}
+
+
+
 .flip-card {
     background-color: transparent;
     width: 130px;
@@ -41,4 +47,32 @@
     background-color: rgb(190, 163, 224);
     color: white;
     transform: rotateY(180deg);
+  }
+
+  
+  .icon:hover {
+    transform: rotate(360deg);
+  }
+  
+  .icon1 {
+    top: 50%;
+    left: 10%;
+  }
+  
+  .icon2 {
+    top: 10%;
+    right: 10%;
+  }
+  
+  .icon3 {
+    bottom: 10%;
+    right: 10%;
+  }
+  .imgl {
+    width: 10rem;
+    border-radius: 30%;
+    margin: auto;
+    display: block;
+  
+
   }

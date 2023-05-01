@@ -1,6 +1,6 @@
 //import { Carousel } from 'react-responsive-carousel';
 import React from "react";
-import { Logo } from "./styles";
+//import { Logo } from "./styles";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 
 import c0 from "../../components/Img/c0.jpg";
@@ -14,7 +14,7 @@ import c7 from "../../components/Img/c7.jpg";
 import c8 from "../../components/Img/c8.jpg";
 import c9 from "../../components/Img/c9.jpg";
 import ieq from "../../components/Img/ieq2.jpg";
-
+import './home.css';
 import { BsFillGeoAltFill } from "react-icons/bs";
 import { GrInstagram } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -22,10 +22,21 @@ import { Social } from "./styles";
 import { Icon } from "./styles";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./style.css";
+import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
+
+
 
 export default function Home() {
+  
+  
+  
+  
+  
+  
   return (
+    
     <div className="container">
       <div className="card mt-4 bg-info">
         <div className="card-title">
@@ -123,7 +134,9 @@ export default function Home() {
           </CCarouselItem>
         </CCarousel>
 
-        <div></div>
+        <div>
+
+        </div>
       </div>
 
       <div className="card mt-4 bg-warning bg-opacity-50">
@@ -138,11 +151,38 @@ export default function Home() {
           CLIQUE NA IMAGEM ABAIXO:
         </p>
 
-        <Logo>
-          <a href="https://maps.app.goo.gl/e9p6hr2WNqNPU19V9">
-            <img src={ieq} alt="bo" />
-          </a>
-        </Logo>
+
+        <div id='home' className='container home-container'>
+      <div className='logo'>
+        <div className='hover-show'>
+          <span className='circle'></span>
+          <span className='circle'></span>
+          <span className='circle'></span>
+          <span className='circle'></span>
+          <span className='circle'></span>
+          <span className='circle'></span>
+          <span className='circle'></span>
+          <span className='circle'></span>
+        </div>
+
+                 
+              
+        <img src={ieq} alt='' />
+
+  
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+                         
 
         <p className="mx-3 my-3 text-center fs-3 fw-bold">IEQ-SEDE</p>
 
@@ -529,7 +569,7 @@ export default function Home() {
             <FaFacebookSquare />
           </a>
 
-          <a href="https://www.instagram.com/ministerio.amai/">
+          <a href='.hover-show'>
             <GrInstagram />
           </a>
         </Social>
