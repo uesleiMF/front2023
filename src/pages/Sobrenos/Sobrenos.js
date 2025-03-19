@@ -15,7 +15,7 @@ export default function Sobrenos() {
             <div className="col">
               <br></br>
               <h2 className="mx-3 my-3 text-center text-success">
-                REDE DE CASAIss
+                REDE DE CASAI
               </h2>
               <h3 className="mx-3 my-3 text-center text-success">
                 AMAI SEMPRE
